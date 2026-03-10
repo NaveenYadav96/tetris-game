@@ -1,0 +1,218 @@
+ 1  sudo apt update
+    2  sudo apt install -y docker.io
+    3  sudo systemctl start docker
+    4  sudo systemctl enable docker
+    5  clear
+    6  sudo systemctl status docker
+    7  clear
+    8  sudo usermod -aG docker $USER
+    9  docker --version
+   10  clear
+   11  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+   12  chmod +x kubectl
+   13  sudo mv kubectl /usr/local/bin/
+   14  kubectl version --client
+   15  clear
+   16  curl -Lo ./kind https://kind.sigs.k8s.io/dl/latest/kind-linux-amd64
+   17  chmod +x kind
+   18  sudo mv kind /usr/local/bin/
+   19  clear
+   20  kind create cluster --name my-cluster
+   21  sudo usermod -aG docker ubuntu
+   22  clear
+   23  kind create cluster --name my-clust
+   24  sudo king create cluster --name my-cluster
+   25  sudo kind create cluster --name my-cluster
+   26  kubectl get nodes
+   27  kubectl get pods
+   28  clear
+   29  kind export kubeconfig --name my-cluster
+   30  sudo kind export kubeconfig --name my-cluster
+   31  clear
+   32  kubectl get current-context
+   33  clear
+   34  kubectl config current-context
+   35  kind get clusters
+   36  sudo -i
+   37  clear
+   38  sudo -i
+   39  clear
+   40  sudo -i
+   41  clear
+   42  history
+    1  sudo apt update
+    2  sudo apt install -y docker.io
+    3  sudo systemctl start docker
+    4  sudo systemctl enable docker
+    5  clear
+    6  sudo systemctl status docker
+    7  clear
+    8  sudo usermod -aG docker $USER
+    9  docker --version
+   10  clear
+   11  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+   12  chmod +x kubectl
+   13  sudo mv kubectl /usr/local/bin/
+   14  kubectl version --client
+   15  clear
+   16  curl -Lo ./kind https://kind.sigs.k8s.io/dl/latest/kind-linux-amd64
+   17  chmod +x kind
+   18  sudo mv kind /usr/local/bin/
+   19  clear
+   20  kind create cluster --name my-cluster
+   21  sudo usermod -aG docker ubuntu
+   22  clear
+   23  kind create cluster --name my-clust
+   24  sudo king create cluster --name my-cluster
+   25  sudo kind create cluster --name my-cluster
+   26  kubectl get nodes
+   27  kubectl get pods
+   28  clear
+   29  kind export kubeconfig --name my-cluster
+   30  sudo kind export kubeconfig --name my-cluster
+   31  clear
+   32  kubectl get current-context
+   33  clear
+   34  kubectl config current-context
+   35  kind get clusters
+   36  sudo -i
+   37  clear
+   38  sudo -i
+   39  clear
+   40  sudo -i
+   41  clear
+   42  history
+ubuntu@ip-172-31-86-168:~$ sudo -i
+root@ip-172-31-86-168:~# histroy
+histroy: command not found
+root@ip-172-31-86-168:~# history
+    1  kind get cluster
+    2  kind get clusters
+    3  clear
+    4  kind export kubeconfig --name my-cluster
+    5  kubectl config get-contexts
+    6  clear
+    7  kubectl get nodes
+    8  kubectl get pods
+    9  clear
+   10  helm repo add bitnami https://charts.bitnami.com/bitnami
+   11  clear
+   12  helm
+   13  clear
+   14  curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+   15  clear
+   16  helm
+   17  clear
+   18  helm repo add bitnami https://charts.bitnami.com/bitnami
+   19  helm repo update
+   20  clear
+   21  helm install my-nginx bitnami/nginx
+   22  clear
+   23  helm list
+   24  kubectl get pods
+   25  clear
+   26  helm upgrade my-nginx bitnami/nginx --set service.type=NodePort
+   27  clear
+   28  helm status my-nginx
+   29  helm uninstall my-nginx
+   30  clear
+   31  kubectl get pods
+   32  clear
+   33  docker ps
+   34  docker stop 3ca88b20d1fa
+   35  docker ps
+   36  clear
+   37  docker ps
+   38  kind status
+   39  clear
+   40  kubectl get pods
+   41  clear
+   42  helm
+   43  clear
+   44  helm list
+   45  helm install my-nginx bitnami/nginx
+   46  clear
+   47  kubectl get pods
+   48  heml list
+   49  helm list
+   50  clear
+   51  helm history
+   52  helm list
+   53  helm history my-nginx
+   54  cd my-nginx
+   55  ls
+   56  clear
+   57  cd /home
+   58  ls
+   59  cd ubuntu/
+   60  ls
+   61  clear
+   62  helm pull bitnami/nginx
+   63  ls
+   64  unzip nginx-22.6.1.tgz
+   65  apt install unzip
+   66  unzip nginx-22.6.1.tgz
+   67  ls
+   68  tar -xvzf nginx-15.0.2.tgz
+   69  clear
+   70  mkdir -p helm-repo/{payments,shipping}
+   71  cd helm-repo
+   72  ls
+   73  cd payments/
+   74  ls
+   75  cd .
+   76  clear
+   77  cd ..
+   78  ls
+   79  clear
+   80  helm create payments
+   81  helm create shipping
+   82  clear
+   83  ls
+   84  cd  payments
+   85  ls
+   86  cd templates/
+   87  ls
+   88  clear
+   89  ls
+   90  nano deployment.yaml 
+   91  cd ..
+   92  ls
+   93  nano values.yaml 
+   94  cat values.yaml 
+   95  clear
+   96  ls
+   97  cd /home/ubuntu
+   98  ls
+   99  clear
+  100  ls
+  101  cd helm-repo/
+  102  ls
+  103  cd ..
+  104  clear
+  105  kind get clusters
+  106  kind delete cluster --name my-cluster
+  107  clear
+  108  nano kind-config.yaml
+  109  kind create cluster --name two-node-cluster --config kind-config.yaml
+  110  clear
+  111  kubectl get pods
+  112  clear
+  113  kubectl get nodes
+  114  kubectl create namespace argocd
+  115  kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+  116  watch kubectl get pods -n argocd
+  117  clear
+  118  kubectl get pods -n argocd
+  119  kubectl port-forward svc/argocd-server -n argocd 8080:443
+  120  curl -k https://localhost:8080
+  121  clear
+  122  kubectl port-forward svc/argocd-server -n argocd 8080:443 --address 0.0.0.0 &
+  123  curl -k https://localhost:8080
+  124  kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+  125  kubectl get pods
+  126  describe tetris-deployment-8549fd9475-rdk2c
+  127  kubectl describe tetris-deployment-8549fd9475-rdk2c
+  128  kubectl get svc
+  129  curl localhost:30007
+  130  kubectl get svc
