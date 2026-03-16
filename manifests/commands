@@ -216,3 +216,4 @@ root@ip-172-31-86-168:~# history
   128  kubectl get svc
   129  curl localhost:30007
   130  kubectl get svc
+kubectl port-forward svc/prometheus-grafana 3000:80 --address 0.0.0.0 & (Forwarding the ports in the background) 
